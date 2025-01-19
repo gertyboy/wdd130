@@ -106,11 +106,11 @@ p {
 
 .secondary {
   background-color: var(--secondary-color);
-  color: #FFFFFF
 }
 
 .accent1 {
   background-color: var(--accent1-color);
+  color: #FFFFFF
 }
 
 p.colored {
