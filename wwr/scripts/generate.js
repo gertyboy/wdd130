@@ -2,7 +2,7 @@ function generateHeader() {
     const header = document.createElement('header');
     header.innerHTML = `
         <a href="index.html">
-        <img src =https://images.squarespace-cdn.com/content/v1/661d5aa268f9961459c0df1a/7a7dc4fb-f306-4b03-a0cd-4d4272898574/NB.png?format=1500w">
+        <img src="https://images.squarespace-cdn.com/content/v1/661d5aa268f9961459c0df1a/7a7dc4fb-f306-4b03-a0cd-4d4272898574/NB.png?format=1500w" id="header_img">
         </a>
         <nav>
             <ul>
