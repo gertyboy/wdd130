@@ -1,7 +1,9 @@
 function generateHeader() {
     const header = document.createElement('header');
     header.innerHTML = `
-        <h1>Welcome to My Website</h1>
+        <a href="index.html">
+        <img src =https://images.squarespace-cdn.com/content/v1/661d5aa268f9961459c0df1a/7a7dc4fb-f306-4b03-a0cd-4d4272898574/NB.png?format=1500w">
+        </a>
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
