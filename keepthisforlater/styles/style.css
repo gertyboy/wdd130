@@ -1,0 +1,25 @@
+body{
+    background-color: rgb(255, 254, 249);
+}
+
+#header_img, #logo{
+    display: block;
+    margin: 0 auto;
+    max-width: 480px;
+}
+
+#nav_links{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.nav_items{
+    margin-left: 1.4vw;
+    margin-right: 1.4vw;
+}
+
+.item_links{
+    text-decoration: none;
+    color: #fb381a;
+}
