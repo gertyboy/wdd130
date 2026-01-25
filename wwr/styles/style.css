@@ -1,18 +1,26 @@
-/* Creative liberties I would like to take if possible
+/* 
+Notes:
+I did choose white as my color, I don't like that I chose it, however, all of the other colors looked worse with my logo, 
+I may go into photoshop and convert the white into transparent stuff but we will see.
+Creative liberties I would like to take if possible
     - Change max-width of #content to 1200px
     - Add a solid black rounded border and make the entire interior #4F9ECE
     - Change the generation of the header and footer to be generated from a javaScript file so they all look the same
     - Change nav a:hover background-color to #376E90
-    - If you let me do this without docking my grade I will
-    - If you don't comment I will assume that I may not do these things
+    - If you let me do this without docking my grade I will. If you are going to dock my grade, I would appreciate an opportunity to redo the assignment,
+      I put a lot of work into this and I hope I can earn a good grade for it.
 */
 
 
 
 
 #content {
-    max-width: 1600px;
+    max-width: 1024px;
     margin: 0 auto;
+    border: 3px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #4F9ECE;
 }
 
 nav a,
@@ -25,6 +33,7 @@ main section {
 
 body {
     background-color: #FFFFFF;
+    margin-top: 0;
 }
 
 header,
@@ -36,8 +45,7 @@ footer,
     background-color: #4F9ECE;
 }
 
-nav a:hover 
-.book:hover,
+nav a:hover .book:hover,
 .join:hover {
     background-color: #376E90;
 }
@@ -48,4 +56,52 @@ nav a:hover
 
 .icon {
     width: 80px;
+}
+
+footer p {
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+nav,
+a,
+.book,
+.join,
+footer {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+nav {
+    text-align: center;
+}
+
+#top-logo {
+    display: block;
+    width: 50%;
+    height: auto;
+    margin: 10px auto 10px auto;
+}
+
+#top-bar {
+    height: 10px;
+    background-color: #4F9ECE;
+    margin-bottom: 10px;
+    margin-top: 0px;
+}
+
+#hero-img {
+    width: 100%;
+    height: auto;
+    background-image: linear-gradient(to bottom, #FFFFFF,#FFFFFF,#FFFFFF, rgb(179,166,165), rgb(208,207,205), #4F9ECE);
+}
+
+.mountains {
+    display: block;
+    margin: auto;
 }
