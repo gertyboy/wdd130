@@ -1,21 +1,51 @@
+/* Creative liberties I would like to take if possible
+    - Change max-width of #content to 1200px
+    - Add a solid black rounded border and make the entire interior #4F9ECE
+    - Change the generation of the header and footer to be generated from a javaScript file so they all look the same
+    - Change nav a:hover background-color to #376E90
+    - If you let me do this without docking my grade I will
+    - If you don't comment I will assume that I may not do these things
+*/
+
+
+
+
 #content {
     max-width: 1600px;
     margin: 0 auto;
 }
 
-nav a {
-    text-align: center;
-}
-#hero-msg h1, #hero-msg h4{
-    text-align: center;
-}
-.button-box {
-    text-align: center;
-}
+nav a,
+#hero-msg h1,
+#hero-msg h4,
+.button-box,
 main section {
     text-align: center;
 }
 
+body {
+    background-color: #FFFFFF;
+}
+
+header,
+.book,
+.join,
+footer,
+.msg,
+#background {
+    background-color: #4F9ECE;
+}
+
+nav a:hover 
+.book:hover,
+.join:hover {
+    background-color: #376E90;
+}
+
 #background {
     height: 725px;
+}
+
+.icon {
+    width: 80px;
 }
