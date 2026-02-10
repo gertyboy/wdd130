@@ -8,11 +8,17 @@ Creative liberties I took
     - Changed the generation of the header and footer to be generated from a javaScript file so they all look the same
     - Changed nav a:hover background-color to #376E90
     - Changed the image to look awesome.
+    - Changed the mountains tag to be centered for now
     - If you let me do this without docking my grade I will. If you are going to dock my grade, I would appreciate an opportunity to redo the assignment,
       I put a lot of work into this and I hope I can earn a good grade for it.
+
 */
 
-
+#hero {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    margin-top: -100px; 
+}
 
 
 #content {
@@ -21,7 +27,16 @@ Creative liberties I took
     border: 3px solid black;
     border-radius: 10px;
     overflow: hidden;
-    background-color: #4F9ECE;
+}
+
+#hero-box {
+    grid-column: 1/4;
+    grid-row: 1/3;
+    z-index: -1;
+}
+
+#hero-msg h4 {
+    color: white;
 }
 
 nav a,
@@ -38,7 +53,6 @@ body {
 }
 
 header,
-.book,
 .join,
 footer,
 .msg,
@@ -79,14 +93,14 @@ a:hover {
 }
 
 nav {
+    display: flex;
+    justify-content: space-around;
     text-align: center;
 }
 
 #top-logo {
-    display: block;
-    width: 50%;
-    height: auto;
-    margin: 10px auto 10px auto;
+max-width: 150px;
+display: grid;
 }
 
 #top-bar {
@@ -105,4 +119,25 @@ nav {
 .mountains {
     display: block;
     margin: auto;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 150px auto;
+}
+
+#logo_link {
+    padding-top: 5px;
+    justify-self: center;
+    align-self: center;
+}
+
+#hero-msg {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 100px;
+}
+
+.home-title{
+    color: white;
 }
