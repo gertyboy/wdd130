@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Favorite Devotionals</title>
+  <link rel="stylesheet" href="styles/styles.css" />
+  <script src="scripts/main.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="header-image">
+        <h1>My Favorite<br>Devotionals</h1>
+      </div>
+    </header>
+    <main>
+      <div class="content-box">
+         <table id="devotional-table">
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>Author</th>
+              <th>Date</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>The Lord is My Light</td>
+              <td>David A. Bednar</td>
+              <td>October 2021</td>
+            </tr>
+            <tr>
+              <td>Anxiety and the Plan of Happiness</td>
+              <td>Brent H. Nielson</td>
+              <td>February 2021</td>
+            </tr>
+            <tr>
+              <td>The Brightness of Hope</td>
+              <td>Laurel C. Day</td>
+              <td>May 2022</td>
+            </tr>
+          </tbody>
+          </table>
+      <form id="devotional-form">
+        <label for="new-devotional">Add a New Devotional:</label>
+        <input type="text" id="new-title" name="new-title" placeholder="Title" required>
+        <input type="text" id="new-author" name="new-author" placeholder="Author" required>
+        <input type="date" id="new-date" name="new-date" required>
+        <button type="submit">Add Devotional</button>
+      </form>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
