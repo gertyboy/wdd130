@@ -1,1 +1,170 @@
-/* Add your CSS here to style your valentines day page */
+:root {
+    --primary-color: #e91e63;
+    --secondary-color: #880e4f; 
+    --accent-color: #fce4ec; 
+    --text-color: #2c3e50;
+    --white: #ffffff;
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --radius: 12px;
+    --font-heading: 'Georgia', serif;
+    --font-body: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--accent-color);
+    font-family: var(--font-body);
+    color: var(--text-color);
+    line-height: 1.6;
+    padding: 20px;
+}
+
+#wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: var(--white);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    border-radius: var(--radius);
+    overflow: hidden;
+    
+    /* Using Grid to structure the whole page */
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+}
+
+header {
+    background-color: var(--primary-color);
+    padding: 1rem 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    list-style: none;
+}
+
+nav a, nav li {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+nav li:hover {
+    color: var(--accent-color);
+    text-decoration: underline;
+}
+
+
+main {
+    display: grid;
+    padding: 40px;
+    gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+        "title title title"
+        "image image image"
+        "card1 card2 card3";
+}
+
+h1 {
+    grid-area: title;
+    text-align: center;
+    font-family: var(--font-heading);
+    font-size: 3rem;
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+}
+img {
+    grid-area: image;
+    width: 100%;
+    max-height: 500px;
+    object-fit: contain;
+    background-color: var(--white);
+
+    padding: 60px; 
+
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath fill='%23e91e63' d='M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z'/%3E%3C/svg%3E");
+    
+    background-size: 60px 60px; 
+    
+    background-repeat: round;
+    border: 2px solid var(--primary-color);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+}
+
+section {
+    background: var(--white);
+    padding: 25px;
+    border: 1px solid #eee;
+    border-radius: var(--radius);
+    border-top: 5px solid var(--primary-color);
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease;
+}
+
+section:nth-of-type(1) { grid-area: card1; }
+section:nth-of-type(2) { grid-area: card2; }
+section:nth-of-type(3) { grid-area: card3; }
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+}
+
+h2 {
+    color: var(--secondary-color);
+    font-family: var(--font-heading);
+    margin-bottom: 15px;
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 10px;
+}
+
+p {
+    font-size: 1rem;
+    color: #555;
+    text-align: justify;
+}
+
+
+footer {
+    background-color: #333;
+    color: #bbb;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    margin-top: auto;
+}
+
+
+@media (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "title"
+            "image"
+            "card1"
+            "card2"
+            "card3";
+    }
+    
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    
+    h1 {
+        font-size: 2.5rem;
+    }
+}
